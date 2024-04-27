@@ -1,0 +1,72 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{geometry}
+\usepackage{array}
+
+\title{sample(Employee Records) -26.4.24}
+\author{Hemalatha A}
+\date{April 2024}
+
+\begin{document}
+\maketitle
+\section{Employee Information}
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{Name} & \textbf{Position} & \textbf{Contact Information} & \textbf{Performance Evaluation} \\
+\hline
+John Doe & Manager & john@example.com & Meets Expectations \\
+\hline
+Jane Smith & Sales Associate & jane@example.com & Exceeds Expectations \\
+\hline
+Michael Johnson & Developer & michael@example.com & Outstanding \\
+\hline
+\end{tabular}
+\caption{Employee Records}
+%assigning a label to the table
+\label{tab:Employee Records}
+\end{table}
+Table \ref{tab:Employee Records} displays sample employee records. It includes columns for employee names, positions, contact information, and performance evaluations.
+
+\section{Explanation of Components}
+In the table above, we use several components to structure the data:
+\begin{itemize}
+  \item \texttt{\textbackslash hline}: Draws a horizontal line across the table.
+  \item \texttt{\textbackslash textbf\{\}}: Makes the text bold.
+  \item \texttt{\&}: Separates columns within a row.
+  \item \texttt{\textbackslash\textbackslash}: Starts a new row.
+  \item \texttt{\{c|c|c|c\}}: Specifies the alignment of each column. Here, "c" means center-aligned, and "|" adds vertical lines between columns.
+  \item \texttt{[h]}: Suggests that the table should be placed approximately "here" in the document.
+\end{itemize}
+
+\section{Math Mode}
+\label{sec:math}
+Here is an example of an inline equation: $E=mc^2$.
+And here is a displayed equation:
+\[
+    \int_{0}^{1} x^2 \, dx = \frac{1}{3}.
+\]
+
+\section{Figures}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{example-image}
+    \caption{An example image.}
+    \label{fig:image}
+\end{figure}
+
+Figure \ref{fig:image} shows an example image.
+
+\section{Headings}
+\subsection{Subsection}
+This is a subsection.
+
+\subsubsection{Subsubsection}
+This is a subsubsection.
+
+\section{Cross-Referencing}
+As mentioned in Section \ref{sec:math}, the formula $E=mc^2$ is fundamental.
+Also, see Figure \ref{fig:image} for the example image.
+
+\end{document}
