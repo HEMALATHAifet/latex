@@ -1,0 +1,9 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\begin{document}
+
+The formula for the midpoint calculation in binary search is:
+\[ \text{mid} = \frac{\text{low} + \text{high}}{2} \]
+
+\end{document}
