@@ -1,0 +1,34 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage[ruled,vlined]{algorithm2e}
+
+\title{Algorithm}
+\author{Hemalatha A}
+\date{May 2024}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+\begin{algorithm}
+\caption{Binary Search}
+     \Procedure{BinarySearch}{$arr$, $target$}
+    \State $low \gets 0$
+    \State $high \gets \text{length}(arr) - 1$
+    \While{$low \leq high$}
+        \State $mid \gets \frac{low + high}{2}$
+        \If{$arr[mid] = target$}
+            \State \textbf{return} $mid$
+        \ElsIf{$arr[mid] < target$}
+            \State $low \gets mid + 1$
+        \Else
+            \State $high \gets mid - 1$
+        \EndIf
+    \EndWhile
+    \State \textbf{return} $-1$ \Comment{If target is not found}
+\EndProcedure
+\end{algorithm}
+
+\end{document}
